@@ -1,0 +1,22 @@
+{
+  "name": "juanmrada",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "gray-matter": "^4.0.2",
+    "next": "10.0.5",
+    "next-themes": "0.0.10",
+    "postcss": "^8.2.4",
+    "raw-loader": "^4.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-markdown": "^5.0.3",
+    "tailwindcss": "^2.0.2"
+  }
+}

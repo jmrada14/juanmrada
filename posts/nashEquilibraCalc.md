@@ -1,5 +1,5 @@
 ---
-title: "Building a Nash equilibrium calculator with Javascript"
+title: "Nash equilibrium with Javascript"
 author: "Juan M. Rada"
 date: "2019-09-10"
 ---

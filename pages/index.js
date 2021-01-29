@@ -1,29 +1,15 @@
-import { useTheme } from "next-themes";
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 import getPosts from "@utils/getPosts";
 
 const Index = ({ posts, title, description, ...props }) => {
-  const { theme, setTheme } = useTheme();
   return (
-    <div className="bg-white dark:bg-black">
-      <div className="py-20 flex flex-col items-center justify-center">
-        <h1 className="text-5xl text-center text-gray-800 dark:text-gray-100 font-bold">
-          Juan M. Rada
-        </h1>
-
-        <button
-          className="mt-16 px-4 py-2 text-white dark:text-black bg-black dark:bg-white font-semibold rounded-md"
-          onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
-          }}
-        >
-          Change Theme
-        </button>
-        <Layout pageTitle={title} description={description}>
-          <PostList posts={posts}/>
-        </Layout>
-      </div>
+    <div className="mx-auto bg-white dark:bg-black">
+      <Layout pageTitle={title} description={description}>
+        <div className="py-2 flex flex-col items-center justify-center">
+          <PostList posts={posts} />
+        </div>
+      </Layout>
     </div>
   );
 };

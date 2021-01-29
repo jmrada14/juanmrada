@@ -1,4 +1,3 @@
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
@@ -8,7 +7,6 @@ import getSlugs from "@utils/getSlugs";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
-  const { theme, setTheme } = useTheme();
   return (
     <>
       <Layout
@@ -21,14 +19,6 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             <a>Back to post list</a>
           </Link>
         </div>
-        <button
-          className="mt-16 px-4 py-2 text-white dark:text-black bg-black dark:bg-white font-semibold rounded-md"
-          onClick={() => {
-            setTheme(theme === "light" ? "dark" : "light");
-          }}
-        >
-          Change Theme
-        </button>
         <article>
           <h1 className="text-5lg text-center text-gray-800 dark:text-gray-100 font-bold">
             {frontmatter.title}

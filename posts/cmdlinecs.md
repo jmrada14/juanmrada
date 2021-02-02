@@ -2,6 +2,7 @@
 title: "Command line cheat sheet"
 author: "Juan M. Rada"
 date: "2019-10-08"
+description: "Basic commands for navigating directories in a unix Terminal"
 ---
 
 # Bash / Terminal Commands

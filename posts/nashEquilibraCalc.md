@@ -2,6 +2,7 @@
 title: "Nash equilibrium with Javascript"
 author: "Juan M. Rada"
 date: "2019-09-10"
+description: "Nash equilibrium with Javascript"
 ---
 
 #Game Theory

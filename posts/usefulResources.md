@@ -2,6 +2,7 @@
 title: "Useful Node.js"
 author: "Juan M. Rada"
 date: "2019-10-09"
+description: "Useful Node.js resources"
 ---
 
 # Node.js

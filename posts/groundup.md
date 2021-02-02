@@ -2,6 +2,7 @@
 title: "Ground-up"
 author: "Juan M. Rada"
 date: "2019-10-23"
+description: "Find your representatives/senator"
 ---
 
 # Ground-Up: a full stack application that attempts to take the politics out of government.

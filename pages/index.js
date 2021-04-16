@@ -1,13 +1,11 @@
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
-import Aside from "@components/Aside";
 import getPosts from "@utils/getPosts";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title} description={description}>
       <PostList posts={posts} />
-      <Aside />
     </Layout>
   );
 };

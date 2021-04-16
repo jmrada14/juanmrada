@@ -6,7 +6,7 @@ export default function ThemeSwitch() {
       <div
         
       >
-        <div className="bg-gray-100 dark:bg-gray-900 dark:text-white">
+        <div className=" dark:bg-gray-900  text-blue-500">
           <button
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >

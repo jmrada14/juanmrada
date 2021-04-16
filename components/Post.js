@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function Post({ postHref, title, author, date, description }) {
   return (
     <>
-      <article className="shadow my-4 w-full bg-white rounded dark:bg-gray-800 ">
+      <article className=" my-4 w-full bg-white rounded dark:bg-gray-900 ">
         <div className="justify-start py-2 px-2 relative items-center">
           <Link href={{ pathname: postHref }}>
-            <a className="text-3xl text-blue-500 font-bold hover:text-gray-700 pt-2 pb-1">
+            <a className="text-3xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1">
               {title}
             </a>
           </Link>
-          <p className="text-xs pb-3 text-blue-800 dark:text-gray-500">
+          <p className="text-xs pb-3 text-gray-500">
             Posted by{" "}
             <span className="font-semibold hover:text-gray-800">{author}</span>{" "}
             on <span className="font-semibold hover:text-gray-800">{date}</span>

@@ -11,7 +11,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <section className="layout">
-        <div className="bg-white dark:bg-black flex flex-col min-h-screen">
+        <div className="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
           <Header />
           <div className="container mx-auto flex flex-wrap flex-grow">
             {children}

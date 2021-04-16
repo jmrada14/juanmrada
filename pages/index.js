@@ -1,16 +1,14 @@
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
+import Aside from "@components/Aside";
 import getPosts from "@utils/getPosts";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
-    <div className="mx-auto bg-white dark:bg-black">
-      <Layout pageTitle={title} description={description}>
-        <div className="py-2 flex flex-col items-center justify-center">
-          <PostList posts={posts} />
-        </div>
-      </Layout>
-    </div>
+    <Layout pageTitle={title} description={description}>
+      <PostList posts={posts} />
+      <Aside />
+    </Layout>
   );
 };
 

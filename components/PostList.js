@@ -1,12 +1,29 @@
 import Link from "next/link";
+import Post from "./Post";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
 
   return (
-    <div>
-      {!posts && <div>No posts!</div>}
-      <ul>
+    <section className="w-full md:w-2/3 flex flex-col items-center px-3">
+      <section className="w-full flex flex-col items-center sm:px-4">
+        {!posts && <div>No posts!</div>}
+        {posts &&
+          posts.map((post) => {
+            return (
+              <>
+                <Post
+                  postHref={`/post/${post.slug}`}
+                  title={post?.frontmatter?.title}
+                  author="Juan M. Rada"
+                  date={post.frontmatter.date}
+                  description={post.frontmatter.description}
+                />
+              </>
+            );
+          })}
+      </section>
+      {/* <ul>
         {posts &&
           posts.map((post) => {
             return (
@@ -25,7 +42,7 @@ export default function PostList({ posts }) {
               </>
             );
           })}
-      </ul>
-    </div>
+      </ul> */}
+    </section>
   );
 }

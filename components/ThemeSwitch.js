@@ -3,18 +3,8 @@ export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      {/* <button
-        className="mt-8 px-1 py-2 text-white dark:text-black bg-black dark:bg-white font-semibold rounded-md"
-        onClick={() => {
-          setTheme(theme === "light" ? "dark" : "light");
-        }}
-      >
-        {theme === "light" ? "dark mode" : "light mode"}
-      </button> */}
       <div
-        className={`w-full md:h-screen ${
-          theme === "light" ? "dark mode" : "light mode"
-        }`}
+        
       >
         <div className="bg-gray-100 dark:bg-gray-900 dark:text-white">
           <button

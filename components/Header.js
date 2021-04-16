@@ -7,9 +7,10 @@ export default function Header() {
         <div className="flex flex-col items-center py-12">
           <Link href="/">
             <a className="font-bold text-blue-500 hover:text-gray-500  text-5xl py-3">
-             <span className="animate-spin">🌏</span> Juan M. Rada
+              <span className="animate-spin">🌏</span> Juan M. Rada
             </a>
-          </Link>
+          </Link>{" "}
+          <ThemeSwitch />
           <p className="text-lg text-gray-700 dark:text-gray-200 text-center my-4 w-full">
             <span className="text-2xl text-gray-800 dark:text-gray-50">
               👋 Hi there, I'm Juan
@@ -23,7 +24,6 @@ export default function Header() {
             <br /> privacy🥷, data analysis and visualization📊,
             <br /> and much more🔥
           </p>
-          <ThemeSwitch />
         </div>
       </header>
     </>

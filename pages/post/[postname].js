@@ -11,7 +11,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
     <>
       <Layout
         pageTitle={`${siteTitle} | ${frontmatter.title}`}
-        className="bg-white dark:bg-black"
+        className="bg-white dark:bg-gray-900"
       >
         <div className="text-5lg text-left text-gray-800 dark:text-gray-100 font-bold">
           ←{" "}
@@ -23,14 +23,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           <h1 className="text-5lg text-center text-gray-800 dark:text-gray-100 font-bold">
             {frontmatter.title}
           </h1>
-          {frontmatter.hero_image && (
-            <img src={frontmatter.hero_image} alt={frontmatter.title} />
-          )}
           <div>
-            <ReactMarkdown
-              source={markdownBody}
-              className="text-5sm text-center text-gray-800 dark:text-gray-100"
-            />
+            <ReactMarkdown source={markdownBody} className="markdown" />
           </div>
         </article>
       </Layout>

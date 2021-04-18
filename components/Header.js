@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex flex-col items-center py-12">
           <Link href="/">
             <a className="font-bold text-blue-500 hover:text-gray-500  text-5xl py-3">
-              <span className="animate-spin">🌏</span> Juan M. Rada
+              <span>🌏</span> Juan M. Rada
             </a>
           </Link>{" "}
           <ThemeSwitch />

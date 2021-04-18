@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Header from "./Header";
 
 export default function Layout({ children, pageTitle, description, ...props }) {
@@ -12,7 +13,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       </Head>
       <section className="layout">
         <div className="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
-          <Header />
+          {useRouter().pathname === "/" && <Header />}
           <div className="container mx-auto flex flex-wrap flex-grow">
             {children}
           </div>

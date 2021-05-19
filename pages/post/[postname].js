@@ -1,7 +1,6 @@
 import Link from "next/link";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-
 import Layout from "@components/Layout";
 import getSlugs from "@utils/getSlugs";
 
@@ -20,8 +19,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           </Link>
         </div>
         <article>
-          <h1 className="text-5lg text-center text-gray-800 dark:text-gray-100 font-bold">
-            {frontmatter.title}
+          <h1 className="text-4xl text-center text-gray-800 dark:text-gray-100 font-bold">
+            {frontmatter.title} 
           </h1>
           <div>
             <ReactMarkdown source={markdownBody} className="markdown" />

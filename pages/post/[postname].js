@@ -20,9 +20,16 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         </div>
         <article>
           <h1 className="text-4xl text-center text-gray-800 dark:text-gray-100 font-bold">
-            {frontmatter.title} 
+            {frontmatter.title}
           </h1>
-          <div>
+          <div className="blog-wrapper ">
+            <style jsx>{`
+              .blog-wrapper {
+                margin: 0 auto;
+                max-width: 75%;
+                padding: 1.45rem 1.0875rem;
+              }
+            `}</style>
             <ReactMarkdown source={markdownBody} className="markdown" />
           </div>
         </article>

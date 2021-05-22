@@ -5,9 +5,9 @@ date: "2019-09-10"
 description: "Nash equilibrium with Javascript"
 ---
 
-#Game Theory
+# Game Theory
 
-###Keywords
+### Keywords
 
 - **_Game :_** A game is a formal description of a strategic situation.
 

@@ -13,8 +13,8 @@ export default function Header() {
           </Link>{" "}
           <ThemeSwitch />
           {useRouter().pathname === "/" && (
-            <p className="text-lg text-gray-700 dark:text-gray-200 text-center my-4 w-full">
-              <span className="text-2xl text-gray-800 dark:text-gray-50">
+            <p className="text-lg text-gray-700 dark:text-gray-100 text-center my-4 w-full">
+              <span className="text-2xl text-gray-800 dark:text-gray-100">
                 👋 Hi there, I'm Juan
               </span>
               <br />

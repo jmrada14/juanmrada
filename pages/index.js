@@ -32,7 +32,7 @@ const Index = () => {
               </span>
             </span>
 
-            <p className="text-xl text-gray-700 dark:text-gray-100 text-left my-4 w-full">
+            <p className="xl:text-xl lg:text-xl sm:text-lg md:text-xl  text-gray-700 dark:text-gray-100 text-left my-4 w-full">
               An enthusiastic and ambitious software developer🚀 committed to
               human-center development.🎯 I'm interested in UI development, web
               performance📈, information security, privacy🥷, data analysis and

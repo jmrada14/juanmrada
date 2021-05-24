@@ -1,12 +1,18 @@
+import Link from "next/link";
 import Layout from "@components/Layout";
-import Header from "@components/Header";
 import PostList from "@components/PostList";
 import getPosts from "@utils/getPosts";
 
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title} description={description}>
-      <Header />
+      <div className="flex flex-col items-center py-12">
+        <Link href="/">
+          <a className="font-bold text-5xl py-3 text-gray-800 dark:text-red-50">
+            Juan M. Rada
+          </a>
+        </Link>{" "}
+      </div>
       <PostList posts={posts} />
     </Layout>
   );

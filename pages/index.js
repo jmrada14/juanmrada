@@ -15,7 +15,7 @@ const Index = () => {
   }, []);
   return (
     <Layout>
-      <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-4 xl:py-4 lg:h-screen">
+      <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
         <div className="container mx-auto relative mt-28 max-w-xl">
           <div className="px-6 flex flex-col items-left">
             <span className="font-bold text-5xl sm:text-3xl md:text-4xl py-3">
@@ -39,7 +39,7 @@ const Index = () => {
               visualization📊, and much more🔥
             </p>
             <br />
-            <div class="flex flex-wrap justify-left text-lg">
+            <div className="flex flex-wrap justify-left text-lg">
               <Link href="https://github.com/jmrada14">
                 <span className="py-2 font-semibold text-blue-500 cursor-pointer">
                   GitHub

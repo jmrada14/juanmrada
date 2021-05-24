@@ -5,7 +5,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link rel="icon" href="public/favicon.ico" />
+        </Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
           <NextScript />

@@ -31,6 +31,10 @@
   @apply text-left;
 }
 
+* {
+  @apply bg-white;
+  @apply dark:bg-gray-900
+}
 /* Start purging... */
 @tailwind components;
 @tailwind utilities;

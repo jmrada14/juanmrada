@@ -18,7 +18,7 @@ const Index = () => {
       <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-4 xl:py-4 lg:h-screen">
         <div className="container mx-auto relative mt-28 max-w-xl">
           <div className="px-6 flex flex-col items-left">
-            <span className="font-bold text-5xl py-3">
+            <span className="font-bold text-5xl sm:text-3xl md:text-4xl py-3">
               Hi there, I'm Juan <br />
               <span className="items-center">
                 I'm a{" "}

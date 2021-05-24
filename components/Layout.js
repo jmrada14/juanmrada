@@ -17,9 +17,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
           </div>
         </nav>
         <div className="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
-          <div className="container mx-auto flex flex-wrap flex-grow">
-            {children}
-          </div>
+          <div className="container mx-auto ">{children}</div>
         </div>
       </section>
     </>

@@ -15,7 +15,7 @@ const Index = () => {
   }, []);
   return (
     <Layout>
-      <main className="text-gray-800 dark:text-red-50 container mx-auto py-24 lg:py-24 xl:py-24 lg:h-screen">
+      <main className="text-gray-800 dark:text-red-50 container mx-auto py-4 lg:py-4 xl:py-4 lg:h-screen">
         <div className="container mx-auto relative mt-28 py-5 max-w-xl">
           <div className="px-6 flex flex-col items-left">
             <span className="font-bold text-5xl py-3">

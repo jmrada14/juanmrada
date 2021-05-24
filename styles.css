@@ -4,32 +4,31 @@
   @apply text-blue-500;
   @apply font-bold;
   @apply text-2xl;
-  @apply text-center;
+  @apply text-left;
 }
 
 .markdown p {
   @apply text-gray-700;
   @apply dark:text-gray-100;
-  @apply text-center;
+  @apply text-left;
 }
 
-.markdown h3 {
+.markdown h3 h4 h5 {
   @apply text-gray-700;
   @apply dark:text-gray-100;
-  @apply text-center;
+  @apply text-left;
   @apply text-lg;
 }
 
-.markdown pre {
+.markdown code {
   @apply text-gray-100;
   @apply dark:text-gray-700;
   @apply bg-gray-600;
 }
 
 .markdown pre {
-  @apply text-gray-100;
-  @apply dark:text-gray-700;
   @apply bg-gray-600;
+  @apply text-left;
 }
 
 /* Start purging... */

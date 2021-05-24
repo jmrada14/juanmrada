@@ -32,9 +32,10 @@ Game theory was developed by John von Neumann and Oskar Morgenstern, to solve ec
 And then improved by Dr. John Forbes Nash, who demonstrated that finite games will always have and equilibrium, at this point all players choose actions
 which are the best for them given their opponents choices.
 
-####The Prisioner's Dilemma :
+#### The Prisioner's Dilemma :
 
-###Problem :
+### Problem :
+
 Two members of a gang of bank robbers, Alice and Bob, have been arrested and are being interrogated in separate rooms. The authorities have no other witnesses, and can only prove the case against them if they can convince at least one of the robbers to betray his accomplice and testify to the crime. Each bank robber is faced with the choice to cooperate with his accomplice and remain silent or to defect from the gang and testify for the prosecution. If they both co-operate and remain silent, then the authorities will only be able to convict them on a lesser charge of loitering, which will mean one year in jail each (1 year for Alice + 1 year for Bob = 2 years total jail time). If one testifies and the other does not, then the one who testifies will go free and the other will get three years (0 years for the one who defects + 3 for the one convicted = 3 years total). However if both testify against the other, each will get two years in jail for being partly responsible for the robbery (2 years for Alice + 2 years for Bob = 4 years total jail time).
 
 Alice and Bob are the players, each of them has two possible strategies: Cooperate and Defect, Each strategy combination defines a payoff pair, like (3, 0) for (Defect , Cooperate) or (1, 1) for Cooperation by Alice and Bob, which of course
@@ -52,7 +53,7 @@ Lets build a Nash equilibrium calculator:
 
 Let's design our calculator, bellow we have the algorithm to be used
 
-```Algorithm 1
+```javascript
 
 for all support size profiles x = (x1, x2), sorted in increasing order of, first,
 |x1 − x2| and, second, (x1 + x2) do
@@ -76,15 +77,5 @@ Return the found NE p
 This said, the actual mechanics of finding equilibrium cells can be done the following way : find the maximum of a column and check if the second member of the pair is the maximum of the row. If these conditions are met, the cell represents a Nash equilibrium. Check all columns this way to find all `NE` cells. An `N×N` matrix may have between `0` and `N×N` pure-strategy Nash equilibrium
 
 ```
-
-
 #STILL IN DEVELOPMENT
-
-
-
-
-
-#####                                                   [Sources](http://www.cdam.lse.ac.uk/Reports/Files/cdam-2001-09.pdf)
-
-###Next post I will build an iterated prisioner's dilemma game.
 ```

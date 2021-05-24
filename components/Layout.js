@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "./Header";
+import ThemeSwitch from "@components/ThemeSwitch";
 
 export default function Layout({ children, pageTitle, description, ...props }) {
   return (
@@ -11,8 +11,12 @@ export default function Layout({ children, pageTitle, description, ...props }) {
         <title>{pageTitle}</title>
       </Head>
       <section className="layout">
+        <nav>
+          <div className="items-right">
+            <ThemeSwitch />
+          </div>
+        </nav>
         <div className="bg-white dark:bg-gray-900 flex flex-col min-h-screen">
-          <Header />
           <div className="container mx-auto flex flex-wrap flex-grow">
             {children}
           </div>

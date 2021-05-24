@@ -5,8 +5,8 @@ export default function PostList({ posts }) {
   if (posts === "undefined") return null;
 
   return (
-    <section className="w-screen flex flex-col items-center px-12">
-      <section className="w-full flex flex-col items-center sm:px-4">
+    <section className="w-full px-12 py-32 box-content h-32 ">
+      <section className="w-full items-left ">
         {!posts && <div>No posts!</div>}
         {posts &&
           posts.map((post) => {

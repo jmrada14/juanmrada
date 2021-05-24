@@ -6,13 +6,15 @@ import getPosts from "@utils/getPosts";
 const Index = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title} description={description}>
-      <div className="flex flex-col items-center py-12">
-        <Link href="/">
-          <a className="font-bold text-5xl py-3 text-gray-800 dark:text-red-50">
-            Juan M. Rada
-          </a>
-        </Link>{" "}
-      </div>
+      <section className="w-screen items-left px-12">
+        <section className="w-full items-left ">
+          <Link href="/">
+            <span className="font-bold text-4xl text-gray-800 dark:text-red-50">
+              Juan M. Rada
+            </span>
+          </Link>{" "}
+        </section>
+      </section>
       <PostList posts={posts} />
     </Layout>
   );

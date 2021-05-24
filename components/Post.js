@@ -6,13 +6,13 @@ export default function Post({ postHref, title, author, date, description }) {
       <article className="mb-7 border-b pb-7">
         <h3 className="text-2xl mb-1">
           <Link href={postHref}>
-            <span className="text-3xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1">
+            <a className="text-xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1">
               {title}
-            </span>
+            </a>
           </Link>
         </h3>
 
-        <div className="text-gray-400 text-md font-extralight">
+        <div className="text-gray-400 text-md font-light">
           <span>
             Posted by{" "}
             <span className="font-semibold hover:text-gray-800">{author}</span>

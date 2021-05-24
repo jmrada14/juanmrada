@@ -14,7 +14,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       >
         <div className="text-5lg text-left text-gray-800 dark:text-gray-100 font-bold">
           ←{" "}
-          <Link href="/">
+          <Link href="/blog">
             <a>Back to post list</a>
           </Link>
         </div>

@@ -12,7 +12,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       </Head>
       <section className="layout">
         <nav>
-          <div className="items-right">
+          <div className="items-center">
             <ThemeSwitch />
           </div>
         </nav>

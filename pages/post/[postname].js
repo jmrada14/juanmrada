@@ -12,7 +12,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         pageTitle={`${siteTitle} | ${frontmatter.title}`}
         className="bg-white dark:bg-gray-900"
       >
-        <div className="text-xl text-left text-gray-800 dark:text-gray-100 font-bold py-12">
+        <div className="text-xl text-left text-gray-800 dark:text-gray-100 font-bold py-16">
           ←{" "}
           <Link href="/blog">
             <a>Back to blog 📔</a>

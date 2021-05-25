@@ -33,7 +33,7 @@ export default function Post({
           <div>
             <ul className="flex flex-wrap">
               {tags.map((tag) => {
-                const tagColor = TAGS_MAP[tag];
+                const tagColor = TAGS_MAP[tag]?.toString();
                 return (
                   <li class="flex-none mt-2 mr-2">
                     <span

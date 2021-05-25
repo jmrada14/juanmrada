@@ -28,7 +28,7 @@ const Blog = ({ posts, title, description, ...props }) => {
                     <ul class="flex flex-wrap">
                       {posts.map((post) =>
                         post.frontmatter.tags.map((tag) => {
-                          const tagColor = TAGS_MAP[tag];
+                          const tagColor = TAGS_MAP[tag]?.toString();
                           return (
                             <li class="flex-none mt-2 mr-2">
                               <button

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 import getPosts from "@utils/getPosts";
+import { TAGS_MAP } from "@utils/tagConfig";
 
 const Blog = ({ posts, title, description, ...props }) => {
   return (
@@ -14,7 +15,7 @@ const Blog = ({ posts, title, description, ...props }) => {
                 <div className="py-16">
                   <Link href="/">
                     <a className="text-4xl text-purple-500 font-bold">
-                      Juan M. Rada 🥷
+                      Juan M. Rada
                     </a>
                   </Link>
                   <div className="text-5lg text-left text-gray-800 dark:text-gray-100 font-semibold py-2">
@@ -22,6 +23,24 @@ const Blog = ({ posts, title, description, ...props }) => {
                     <Link href="/">
                       <a>Back to 🏠</a>
                     </Link>
+                  </div>
+                  <div>
+                    <ul class="flex flex-wrap">
+                      {posts.map((post) =>
+                        post.frontmatter.tags.map((tag) => {
+                          const tagColor = TAGS_MAP[tag];
+                          return (
+                            <li class="flex-none mt-2 mr-2">
+                              <button
+                                className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${tagColor} text-black`}
+                              >
+                                {tag}
+                              </button>
+                            </li>
+                          );
+                        })
+                      )}{" "}
+                    </ul>
                   </div>
                 </div>
 

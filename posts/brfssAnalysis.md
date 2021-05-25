@@ -3,7 +3,7 @@ title: "Exploring the BRFSS data"
 author: "Juan M. Rada"
 date: "2015-09-10"
 description: "Introduction to probability course by Duke University - Final project"
-tags: ["rstudio", "ggplot2", "data science"]
+tags: ["rstudio", "data science"]
 ---
 
 # Overview

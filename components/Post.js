@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { TAGS_MAP } from "@utils/tagConfig";
 export default function Post({
   postHref,
   title,
@@ -31,12 +31,15 @@ export default function Post({
           <span>{description}</span>
           <br />
           <div>
-            <ul class="flex flex-wrap">
+            <ul className="flex flex-wrap">
               {tags.map((tag) => {
+                const tagColor = TAGS_MAP[tag];
                 return (
                   <li class="flex-none mt-2 mr-2">
-                    <span class="pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out bg-yellow-200 text-black hover:bg-yellow-300 hover:text-black">
-                      {tag}
+                    <span
+                      className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${tagColor} text-black`}
+                    >
+                      #{tag}
                     </span>
                   </li>
                 );

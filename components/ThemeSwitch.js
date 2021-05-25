@@ -3,11 +3,10 @@ export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      <div
-        
-      >
+      <div>
         <div className=" dark:bg-gray-900  text-blue-500">
           <button
+            aria-label="dark-mode-btn"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
           >
             {theme === "light" ? (

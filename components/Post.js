@@ -21,7 +21,10 @@ export default function Post({
       <article className="mb-7 border-b pb-7">
         <h3 className="text-2xl mb-1">
           <Link href={postHref}>
-            <a className="text-xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1">
+            <a
+              aria-label="article-url"
+              className="text-xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1"
+            >
               {title}
             </a>
           </Link>
@@ -44,6 +47,7 @@ export default function Post({
                 return (
                   <li class="flex-none mt-2 mr-2">
                     <span
+                      aria-label="blog-tag"
                       className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${TAGS_MAP[tag]} text-black`}
                     >
                       #{tag}
@@ -55,7 +59,10 @@ export default function Post({
           </div>
         </div>
         <Link href={{ pathname: postHref }}>
-          <a className="text-blue-500 hover:text-blue-300">
+          <a
+            aria-label="read-more-url"
+            className="text-blue-500 hover:text-blue-300"
+          >
             Read more
             <svg
               className="inline h-5 w-4 align-text-top"

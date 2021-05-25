@@ -7,7 +7,7 @@ export default function Layout({ children, pageTitle, description, ...props }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="Juan M. Rada" content="Juan M. Rada digital garden"></meta>
+        <meta name="Description" content={description}></meta>
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>{pageTitle}</title>
       </Head>

@@ -14,9 +14,6 @@ function App({ Component, pageProps }) {
           site_name: "Juan M. Rada",
         }}
       />
-      <Head>
-        <meta name="Juan M. Rada" content="Juan M. Rada digital garden" />
-      </Head>
       <Component {...pageProps} />
     </ThemeProvider>
   );

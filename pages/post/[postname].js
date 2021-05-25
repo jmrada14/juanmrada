@@ -17,6 +17,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
           title={`Juan M. Rada Blog - Post: ${frontmatter.title}`}
           description={`Author: ${frontmatter.author} Date:${frontmatter.date} Description:${frontmatter.description} `}
         />
+        <Head>
+          <meta name="Juan M. Rada" content="Juan M. Rada blog post" />
+        </Head>
         <div className="text-xl text-left text-gray-800 dark:text-gray-100 font-bold py-16">
           ←{" "}
           <Link href="/blog">

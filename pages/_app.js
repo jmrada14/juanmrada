@@ -1,5 +1,6 @@
 import { ThemeProvider } from "next-themes";
 import { DefaultSeo } from "next-seo";
+import Head from "next/head";
 import "../styles.css";
 
 function App({ Component, pageProps }) {
@@ -13,6 +14,9 @@ function App({ Component, pageProps }) {
           site_name: "Juan M. Rada",
         }}
       />
+      <Head>
+        <meta name="Juan M. Rada" content="Juan M. Rada digital garden" />
+      </Head>
       <Component {...pageProps} />
     </ThemeProvider>
   );

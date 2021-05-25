@@ -15,8 +15,14 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
       >
         <NextSeo
           title={`Juan M. Rada Blog - Post: ${frontmatter.title}`}
-          description={frontmatter.description}
+          description={`Author: ${frontmatter.author} Date:${frontmatter.date} Description:${frontmatter.description} `}
         />
+        <Head>
+          <meta
+            name={`Juan M. Rada Blog - Post: ${frontmatter.title}`}
+            content={`Author: ${frontmatter.author} Date:${frontmatter.date} Description:${frontmatter.description} `}
+          />
+        </Head>
         <div className="text-xl text-left text-gray-800 dark:text-gray-100 font-bold py-16">
           ←{" "}
           <Link href="/blog">

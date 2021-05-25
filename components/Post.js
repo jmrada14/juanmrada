@@ -30,13 +30,12 @@ export default function Post({
           </Link>
         </h3>
 
-        <div className="text-gray-600 text-md font-light">
+        <div className="text-gray-900 dark:text-gray-100 text-md font-light">
           <span>
-            Posted by{" "}
-            <span className="font-semibold hover:text-gray-800">{author}</span>
+            Posted by <span className="font-semibold ">{author}</span>
           </span>{" "}
           <time datetime={date}>
-            on <span className="font-semibold hover:text-gray-800">{date}</span>
+            on <span className="font-semibold ">{date}</span>
           </time>{" "}
           <br />
           <span>{description}</span>

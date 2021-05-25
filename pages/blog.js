@@ -28,11 +28,12 @@ const Blog = ({ posts, title, description, ...props }) => {
                     <ul class="flex flex-wrap">
                       {posts.map((post) =>
                         post.frontmatter.tags.map((tag) => {
-                          const tagColor = TAGS_MAP[tag]?.toString();
                           return (
                             <li class="flex-none mt-2 mr-2">
                               <button
-                                className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${tagColor} text-black`}
+                                className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${TAGS_MAP[
+                                  tag
+                                ]?.toString()} text-black`}
                               >
                                 {tag}
                               </button>

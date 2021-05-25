@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Layout from "@components/Layout";
 import getSlugs from "@utils/getSlugs";
+import { NextSeo } from "next-seo";
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>;
@@ -12,6 +13,10 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
         pageTitle={`${siteTitle} | ${frontmatter.title}`}
         className="bg-white dark:bg-gray-900"
       >
+        <NextSeo
+          title={`Juan M. Rada Blog - Post: ${frontmatter.title}`}
+          description={frontmatter.description}
+        />
         <div className="text-xl text-left text-gray-800 dark:text-gray-100 font-bold py-16">
           ←{" "}
           <Link href="/blog">

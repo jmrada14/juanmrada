@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import TextTransition, { presets } from "react-text-transition";
+import { NextSeo } from "next-seo";
 import Layout from "@components/Layout";
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
   }, []);
   return (
     <Layout>
+      <NextSeo title="Juan M. Rada" description="Juan M. Rada home page" />
       <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
         <div className="container mx-auto relative mt-28 max-w-xl">
           <div className="px-6 flex flex-col items-left">

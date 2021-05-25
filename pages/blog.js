@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "@components/Layout";
 import PostList from "@components/PostList";
 import getPosts from "@utils/getPosts";
+import { NextSeo } from "next-seo";
 const TAGS_MAP = {
   javascript: "bg-yellow-200",
   "game theory": "bg-pink-200",
@@ -15,6 +16,7 @@ const TAGS_MAP = {
 const Blog = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title} description={description}>
+      <NextSeo title="Juan M. Rada Blog" description="Juan M. Rada blog" />
       <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
         <div className="container mx-auto relative max-w-xl">
           <div className="flex flex-col items-left">

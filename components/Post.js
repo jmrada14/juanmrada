@@ -23,14 +23,14 @@ export default function Post({
           <Link href={postHref}>
             <a
               aria-label="article-url"
-              className="text-xl text-blue-500 font-bold hover:text-gray-500 pt-2 pb-1"
+              className="text-xl text-blue-500 font-bold hover:text-purple-500 pt-2 pb-1"
             >
               {title}
             </a>
           </Link>
         </h3>
 
-        <div className="text-gray-400 text-md font-light">
+        <div className="text-gray-600 text-md font-light">
           <span>
             Posted by{" "}
             <span className="font-semibold hover:text-gray-800">{author}</span>
@@ -48,7 +48,7 @@ export default function Post({
                   <li class="flex-none mt-2 mr-2">
                     <span
                       aria-label="blog-tag"
-                      className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${TAGS_MAP[tag]} text-black`}
+                      className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${TAGS_MAP[tag]} text-gray-900`}
                     >
                       #{tag}
                     </span>
@@ -61,7 +61,7 @@ export default function Post({
         <Link href={{ pathname: postHref }}>
           <a
             aria-label="read-more-url"
-            className="text-blue-500 hover:text-blue-300"
+            className="text-blue-500 hover:text-purple-500"
           >
             Read more
             <svg

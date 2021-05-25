@@ -17,7 +17,7 @@ const Index = () => {
   return (
     <Layout>
       <NextSeo title="Juan M. Rada" description="Juan M. Rada home page" />
-      <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
+      <main className="text-gray-900 dark:text-gray-100 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
         <div className="container mx-auto relative mt-28 max-w-xl">
           <div className="px-6 flex flex-col items-left">
             <span className="font-bold text-4xl py-3">
@@ -34,7 +34,7 @@ const Index = () => {
               </span>
             </span>
 
-            <p className="xl:text-xl lg:text-xl sm:text-lg md:text-xl  text-gray-700 dark:text-gray-100 text-left my-4 w-full">
+            <p className="xl:text-xl lg:text-xl sm:text-lg md:text-xl  text-gray-900 dark:text-gray-100 text-left my-4 w-full">
               An enthusiastic and ambitious software developer🚀 committed to
               human-center development.🎯 I'm interested in UI development, web
               performance📈, information security, privacy🥷, data analysis and

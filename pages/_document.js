@@ -13,7 +13,7 @@ class MyDocument extends Document {
           ></meta>
         </Head>
         <link rel="shortcut icon" href="/favicon.ico" />
-        <body className="bg-white dark:bg-black text-white dark:text-black">
+        <body className="bg-white dark:bg-black text-white dark:text-gray-900">
           <Main />
           <NextScript />
         </body>

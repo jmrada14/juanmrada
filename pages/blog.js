@@ -17,7 +17,7 @@ const Blog = ({ posts, title, description, ...props }) => {
   return (
     <Layout pageTitle={title} description={description}>
       <NextSeo title="Juan M. Rada Blog" description="Juan M. Rada blog" />
-      <main className="text-gray-800 dark:text-red-50 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
+      <main className="text-gray-800 dark:text-gray-100 container mx-auto lg:py-2 xl:py-2 lg:h-screen">
         <div className="container mx-auto relative max-w-xl">
           <div className="flex flex-col items-left">
             <section className="w-full px-12 box-content h-32 ">
@@ -28,7 +28,7 @@ const Blog = ({ posts, title, description, ...props }) => {
                       Juan M. Rada
                     </a>
                   </Link>
-                  <div className="text-5lg text-left text-gray-800 dark:text-gray-100 font-semibold py-2">
+                  <div className="text-5lg text-left text-gray-900 dark:text-gray-100 font-semibold py-2">
                     ←{" "}
                     <Link href="/">
                       <a>Back to 🏠</a>

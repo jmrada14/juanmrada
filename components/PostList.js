@@ -2,12 +2,11 @@ import Post from "./Post";
 
 export default function PostList({ posts }) {
   if (posts === "undefined") return null;
-
   return (
     <section>
       {!posts && <div>No posts!</div>}
       {posts &&
-        posts.map((post) => {
+        [...posts].reverse().map((post) => {
           return (
             <>
               <Post

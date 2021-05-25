@@ -3,6 +3,7 @@ title: "Nash equilibrium with Javascript"
 author: "Juan M. Rada"
 date: "2019-09-10"
 description: "Nash equilibrium with Javascript"
+tags: ["game theory", "javascript"]
 ---
 
 # Game Theory
@@ -43,6 +44,7 @@ is the optimal outcome or the equilibrium point. Nevertheless, in some scenarios
 This paradox is widely known in modern game theory, and occurs in certain aspects of the Economy, Politics, Animals, Sports, and many more.
 
 ### Solution :
+
 Cooperation in this case is the best strategy for Alice and Bob but how to prove it?
 
 Let's take a look to this payoff matrix :

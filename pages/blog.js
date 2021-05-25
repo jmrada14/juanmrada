@@ -23,6 +23,7 @@ const Index = ({ posts, title, description, ...props }) => {
                       <a>Back to 🏠</a>
                     </Link>
                   </div>
+                  <div>tags</div>
                 </div>
 
                 <PostList posts={posts} />

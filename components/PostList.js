@@ -16,6 +16,7 @@ export default function PostList({ posts }) {
                 author="Juan M. Rada"
                 date={post.frontmatter.date}
                 description={post.frontmatter.description}
+                tags={post.frontmatter.tags}
               />
             </>
           );

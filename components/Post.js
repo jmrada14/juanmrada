@@ -22,6 +22,21 @@ export default function Post({ postHref, title, author, date, description }) {
           </time>{" "}
           <br />
           <span>{description}</span>
+          <br />
+          <div>
+            <ul class="flex flex-wrap">
+              <li class="flex-none mt-2 mr-2">
+                <span class="pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out bg-yellow-200 text-black hover:bg-yellow-300 hover:text-black">
+                  javascript
+                </span>
+              </li>
+              <li class="flex-none mt-2 mr-2">
+                <span class="pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out bg-yellow-200 text-black hover:bg-yellow-300 hover:text-black">
+                  react
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
         <Link href={{ pathname: postHref }}>
           <a className="text-blue-500 hover:text-blue-300">

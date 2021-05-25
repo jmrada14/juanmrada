@@ -13,7 +13,10 @@ function App({ Component, pageProps }) {
           site_name: "Juan M. Rada",
         }}
       />
-      <Component {...pageProps} />
+      <Component
+        {...pageProps}
+        style={{ overflowY: "hidden", overflowX: "hidden" }}
+      />
     </ThemeProvider>
   );
 }

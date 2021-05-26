@@ -60,7 +60,7 @@ export default function Post({
         <Link href={{ pathname: postHref }}>
           <a
             aria-label="read-more-url"
-            className="text-blue-500 hover:text-purple-500"
+            className="text-blue-500 hover:text-purple-500 text-lg"
           >
             Read more
             <svg

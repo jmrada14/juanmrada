@@ -24,7 +24,7 @@ const Blog = ({ posts, title, description, ...props }) => {
               <section className="w-full items-left ">
                 <div className="py-16">
                   <Link href="/">
-                    <a className="text-4xl text-purple-500 font-bold">
+                    <a className="text-4xl text-purple-600 font-bold">
                       Juan M. Rada
                     </a>
                   </Link>
@@ -34,7 +34,7 @@ const Blog = ({ posts, title, description, ...props }) => {
                       <a>Back to 🏠</a>
                     </Link>
                   </div>
-                  <div>
+                  {/* <div>
                     <ul class="flex flex-wrap">
                       {posts.map((post) =>
                         post.frontmatter.tags.map((tag) => {
@@ -50,7 +50,7 @@ const Blog = ({ posts, title, description, ...props }) => {
                         })
                       )}{" "}
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
 
                 <PostList posts={posts} />

@@ -24,7 +24,7 @@ const Index = () => {
               Hi there, I'm Juan <br />
               <span className="items-center">
                 I'm a{" "}
-                <span className="text-purple-500">
+                <span className="text-purple-600">
                   <TextTransition
                     inline
                     text={TEXTS[index % TEXTS.length]}
@@ -43,18 +43,18 @@ const Index = () => {
             <br />
             <div className="flex flex-wrap justify-left text-lg">
               <Link href="/blog">
-                <span className="px-2 py-2 font-semibold text-blue-500 cursor-pointer hover:underline">
+                <span className="px-2 py-2 font-semibold text-lg text-purple-600 cursor-pointer hover:underline">
                   Blog
                 </span>
               </Link>
               <Link href="https://github.com/jmrada14">
-                <span className="py-2 font-semibold text-blue-500 cursor-pointer hover:underline">
+                <span className="py-2 font-semibold text-lg text-purple-600 cursor-pointer hover:underline">
                   GitHub
                 </span>
               </Link>
 
               <Link href="https://www.linkedin.com/in/juan-rada-4b997b190/">
-                <span className="px-2 py-2 font-semibold text-blue-500 cursor-pointer hover:underline">
+                <span className="px-2 py-2 font-semibold text-lg text-purple-600 cursor-pointer hover:underline">
                   LinkedIn
                 </span>
               </Link>

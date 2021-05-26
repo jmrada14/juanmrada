@@ -58,7 +58,10 @@ export default function Post({
           </div>
         </div>
         <Link href={{ pathname: postHref }}>
-          <a aria-label="read-more-url" className="text-blue-600 text-lg">
+          <a
+            aria-label="read-more-url"
+            className="text-blue-600 dark:text-blue-500 text-lg"
+          >
             Read me
             <svg
               className="inline h-5 w-4 align-text-top"

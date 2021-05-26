@@ -40,7 +40,7 @@ export default function Post({
           <br />
           <span>{description}</span>
           <br />
-          <div>
+          <div className="py-2">
             <ul className="flex flex-wrap">
               {tags.map((tag) => {
                 return (
@@ -59,7 +59,7 @@ export default function Post({
         </div>
         <Link href={{ pathname: postHref }}>
           <a aria-label="read-more-url" className="text-blue-600 text-lg">
-            Read more
+            Read me
             <svg
               className="inline h-5 w-4 align-text-top"
               xmlns="http://www.w3.org/2000/svg"

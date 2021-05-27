@@ -1,83 +1,26 @@
-import Link from "next/link";
-const TAGS_MAP = {
-  javascript: "bg-yellow-200",
-  "game theory": "bg-pink-200",
-  "data science": "bg-blue-200",
-  react: "bg-green-200",
-  fastify: "bg-red-200",
-  mongodb: "bg-purple-200",
-  rstudio: "bg-blue-300",
-};
-export default function Post({
-  postHref,
-  title,
-  author,
-  date,
-  description,
-  tags = [],
-}) {
-  return (
-    <>
-      <article className="mb-7 border-b pb-7">
-        <h3 className="text-2xl mb-1">
-          <Link href={postHref}>
-            <a
-              aria-label="article-url"
-              className="text-xl text-blue-500 font-bold hover:text-purple-500 pt-2 pb-1"
-            >
-              {title}
-            </a>
-          </Link>
-        </h3>
+import PostReadMe from '@components/PostReadMe'
+import PostTags from '@components/PostTags'
+import PostTitle from '@components/PostTitle'
 
-        <div className="text-gray-900 dark:text-gray-100 text-md font-light">
-          <span>
-            Posted by <span className="font-semibold ">{author}</span>
-          </span>{" "}
-          <time datetime={date}>
-            on <span className="font-semibold ">{date}</span>
-          </time>{" "}
-          <br />
-          <span>{description}</span>
-          <br />
-          <div className="py-2">
-            <ul className="flex flex-wrap">
-              {tags.map((tag) => {
-                return (
-                  <li class="flex-none mt-2 mr-2">
-                    <span
-                      aria-label="blog-tag"
-                      className={`pointer-events-auto inline-block rounded-md px-2 py-1 text-sm font-semibold transition-colors duration-200 ease-in-out ${TAGS_MAP[tag]} text-gray-900`}
-                    >
-                      #{tag}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-        <Link href={{ pathname: postHref }}>
-          <a
-            aria-label="read-more-url"
-            className="text-blue-600 dark:text-blue-500 text-lg"
-          >
-            Read me
-            <svg
-              className="inline h-5 w-4 align-text-top"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </a>
-        </Link>
-      </article>
-    </>
-  );
+export default function Post({ postHref, title, author, date, description, tags = [] }) {
+    return (
+        <>
+            <article className="mb-7 border-b pb-7">
+                <PostTitle postHref={postHref} title={title} />
+                <div className="text-gray-900 dark:text-gray-100 text-md font-light">
+                    <span>
+                        Posted by <span className="font-semibold ">{author}</span>
+                    </span>{' '}
+                    <time datetime={date}>
+                        on <span className="font-semibold ">{date}</span>
+                    </time>{' '}
+                    <br />
+                    <span>{description}</span>
+                    <br />
+                    <PostTags tags={tags} />
+                </div>
+                <PostReadMe postHref={postHref} />
+            </article>
+        </>
+    )
 }

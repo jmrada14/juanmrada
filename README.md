@@ -23,4 +23,4 @@ To run locally, `yarn`, then `yarn dev`, then open https://localhost:3000.
 ### TO DO:
 
 -   improve layout
--   refactor into smaller components
+

@@ -55,7 +55,7 @@ const Index = () => {
 
                             <Link href="https://www.linkedin.com/in/juan-rada-4b997b190/">
                                 <span className="px-2 py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
-                                    LinkedI
+                                    LinkedIn
                                 </span>
                             </Link>
                         </div>

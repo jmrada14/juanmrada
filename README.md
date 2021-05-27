@@ -6,12 +6,15 @@ Welcome to my digital garden.
 
 ### Tools:
 
-- Nextjs
-- Tailwindcss
-- Next-seo
-- Next-themes
-- React-markdownBody
-- Gray-matter
+-   Nextjs
+-   Tailwindcss
+-   Next-seo
+-   Next-themes
+-   React-markdownBody
+-   Gray-matter
+-   Eslint
+-   Prettier
+-   Husky pre commit hook
 
 ### How to run
 
@@ -19,8 +22,5 @@ To run locally, `yarn`, then `yarn dev`, then open https://localhost:3000.
 
 ### TO DO:
 
-- add Eslint
-- add Prettier
-- add husky
-- improve layout
-- refactor into smaller components
+-   improve layout
+-   refactor into smaller components

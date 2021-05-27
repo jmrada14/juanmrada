@@ -10,7 +10,7 @@ class MyDocument extends Document {
                     <meta name="Juan M. Rada" content="Juan M. Rada digital garden"></meta>
                 </Head>
                 <link rel="shortcut icon" href="/favicon.ico" />
-                <body className="bg-white dark:bg-black text-white dark:text-gray-900">
+                <body className="bg-white dark:bg-gray-900 text-white dark:text-gray-900">
                     <Main />
                     <NextScript />
                 </body>

@@ -1,36 +1,24 @@
 ---
-title: "Ground-up"
-author: "Juan M. Rada"
-date: "2019-10-23"
-description: "Find your representatives/senator"
-tags: ["react", "fastify", "mongodb"]
+title: 'Ground-up'
+author: 'Juan M. Rada'
+date: '2019-10-23'
+description: 'Find your representatives/senator'
+tags: ['javascript', 'nextjs', 'mongodb']
 ---
 
-# Ground-Up: a full stack application that attempts to take the politics out of government.
+# Ground-Up
 
-## Partners: Sanjeev Chadeesingh and Juan Rada
+An application to keep track of US representatives.
+![NextJS Ground-up](https://cdn1.bbcode0.com/uploads/2021/5/27/ea641796f2ad2572275365e2cbd0bf8a-full.png)
 
-## Technologies Used: MERN Stack
+## Technologies Used:
 
-## The Problem the Application is Attempting to Solve:
+Initially Ground-up was built using the MERN Stack but I rebuilt it using NextJS and MongoDB
 
-Sanjeev and Juan wanted to design an application that solved two problems:
+## Intro:
 
-1. Get a Spotlight on the Importance of Local Elections
-1. Remove the Subjectivity Now Inherent in Modern Government
+We wanted to know who each congressman and congresswoman was, from both chambers of congress (the House of Representatives and the Senate.) Thankfully, ProPublica has a data-store, and from it we were able to access all current members of congress(and much more)
 
-## Process:
+[Check the MERN app here](https://ground-up-1.herokuapp.com/)
 
-We first had to find data. We wanted to know who each congressman and congresswoman was, from both chambers of congress (the House of Representatives and the Senate.) Thankfully, ProPublica has a data-store, and from it we were able to access all current members of congress, alongside all bills voted upon during the current (116th) Congress. We decided to focus on any bills passed that affected the environment. We had to use govtrack.us for the version of data we preferred for bills that were passed. This information was in CSV format, and we used an open source data translator to transform the information from CSV to JSON format (csvjson.com.)
-
-After successfully transforming all data into JSON format, we set up our Mongo database with the following collections:
-
-1. **Bills:** _20 bills passed during the 116th Congress that impacted the environment._
-1. **Members:** _All 538 members of congress._
-1. **Users:** _Any and all members that wish to join the **Ground-Up** application. We provide authentication and protection through PassportJS._
-
-Upon completion of the database, we had the information we needed to pull in order to serve the front-end of the application. Our plan was to allow our users to simply view the data affecting their community. We put all the congress members into card formats in which their: names, party affiliations, states of representation and twitter handles are available. We wanted to update the common phrase: "send a letter to your congressman," and decided that adding the twitter handles of each congress member to their respective cards would be our 2019 version of giving people access to their elected officials. We decided to display the bills in a table format, and put the information of each member onto the table, with their vote on each bill available.
-
-The combination of cards with necessary information about each member of congress, and a table displaying how these congress members voted on environment-centric bills felt like the most objective manner in which we could educate people about how their local politicians vote. We added additional information on our **Learn More/About Us** page, highlighting the shift in demographics in this country, primarily, that the voting electorate is becoming increasingly younger. These younger voters are voting in higher numbers, and not using conventional media for their information about politics. Ground-Up is an application made for these younger voters.
-
-#Check the app [here](https://ground-up-1.herokuapp.com/)
+[Check the NextJS app here](https://ground-up-v1.jmrada14.vercel.app/)

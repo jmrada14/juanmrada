@@ -1,14 +1,14 @@
 ---
-title: "Exploring the BRFSS data"
-author: "Juan M. Rada"
-date: "2015-09-10"
-description: "Introduction to probability course by Duke University - Final project"
-tags: ["rstudio", "data science"]
+title: 'Exploring the BRFSS data'
+author: 'Juan M. Rada'
+date: '2015-09-10'
+description: 'Introduction to probability course by Duke University - Final project'
+tags: ['rstudio', 'data science']
 ---
 
 # Overview
 
-This was the final project for the introduction to probability course by Duke University.
+This was my final project for the introduction to probability course by Duke University.
 The goal of this project was to understand the foundations of R using Rstudio.
 
 ![Some nice charts with Ggplot2](https://cdn1.bbcode0.com/uploads/2021/5/25/70d94b1887034f2731842191934a0308-full.png)

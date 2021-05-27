@@ -6,6 +6,7 @@ const TAGS_MAP = {
     fastify: 'bg-red-200',
     mongodb: 'bg-purple-200',
     rstudio: 'bg-blue-300',
+    nextjs: 'bg-red-400',
 }
 export default function PostTags({ tags }) {
     return (

@@ -13,7 +13,7 @@ import { NextSeo } from 'next-seo'
 //     rstudio: 'bg-blue-300',
 // }
 
-const Blog = ({ posts, title, description, ...props }) => {
+const Blog = ({ posts, title, description }) => {
     return (
         <Layout pageTitle={title} description={description}>
             <NextSeo title="Juan M. Rada Blog" description="Juan M. Rada blog" />

@@ -24,9 +24,22 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                     </Link>
                 </div>
                 <article>
-                    <h1 className="text-4xl text-center text-gray-800 dark:text-gray-100 font-bold">
-                        {frontmatter.title}
-                    </h1>
+                    <div className="mb-2 border-b pb-9">
+                        {' '}
+                        <h1 className="py-1 text-4xl text-left px-24 text-purple-700 font-bold">
+                            {frontmatter.title}
+                        </h1>
+                        <h3 className="text-gray-900 dark:text-gray-100 text-md font-light text-left px-24">
+                            <span className="py-0.5">
+                                Posted by{' '}
+                                <span className="font-semibold ">{frontmatter.author}</span>
+                            </span>{' '}
+                            <br />
+                            <time datetime={frontmatter.date} className="py-0.5">
+                                <span className="font-semibold ">{frontmatter.date}</span>
+                            </time>{' '}
+                        </h3>
+                    </div>
                     <div className="blog-wrapper ">
                         <style jsx>{`
                             .blog-wrapper {

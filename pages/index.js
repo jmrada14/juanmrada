@@ -34,7 +34,7 @@ const Index = () => {
                             </span>
                         </span>
 
-                        <p className="xl:text-xl lg:text-xl sm:text-lg md:text-xl  text-gray-900 dark:text-gray-100 text-left my-4 w-full">
+                        <p className="text-lg  text-gray-900 dark:text-gray-100 text-left my-4 w-full">
                             An enthusiastic and ambitious software developer🚀 committed to
                             human-center development.🎯 I'm interested in UI development, web
                             performance📈, information security, privacy🥷, data analysis and
@@ -43,18 +43,19 @@ const Index = () => {
                         <br />
                         <div className="flex flex-wrap justify-left text-lg">
                             <Link href="/blog">
-                                <span className="px-2 py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
+                                <span className="py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
                                     Blog
                                 </span>
                             </Link>
+                            <div className="px-2" />
                             <Link href="https://github.com/jmrada14">
-                                <span className="py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
+                                <span className="px-3 py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
                                     GitHub
                                 </span>
                             </Link>
 
                             <Link href="https://www.linkedin.com/in/juan-rada-4b997b190/">
-                                <span className="px-2 py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
+                                <span className="px-3 py-2 font-semibold text-lg text-purple-600 dark:text-purple-400 cursor-pointer hover:underline">
                                     LinkedIn
                                 </span>
                             </Link>

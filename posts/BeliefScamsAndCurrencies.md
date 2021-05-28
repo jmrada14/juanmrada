@@ -57,3 +57,5 @@ Remember there is not an infinite supply of greater fools, and when you run out 
 ## Faith, belief, and fanaticism
 
 Purchasing a crypto token is an entry in an accounting database, an extremely expensive collection of bits. Its value is purely speculative. Like a religion, it is a system of belief backed by wishful and irrational thinking and a combination of fear and greed.
+
+The market doesn't care about decentralization fantasies or libertarian utopias.

@@ -1,11 +1,18 @@
+import { useEffect } from 'react'
 import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import Layout from '@components/Layout'
 import getSlugs from '@utils/getSlugs'
 import { NextSeo } from 'next-seo'
+import Prism from 'prismjs'
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            Prism.highlightAll()
+        }
+    }, [])
     if (!frontmatter) return <></>
     return (
         <>

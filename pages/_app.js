@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'next-themes'
 import { DefaultSeo } from 'next-seo'
 import '../styles.css'
+import 'prismjs/themes/prism-tomorrow.css'
 
 function App({ Component, pageProps }) {
     return (

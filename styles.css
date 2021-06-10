@@ -54,13 +54,11 @@
 }
 
 .markdown code {
-    @apply text-gray-100;
-    @apply dark:text-gray-900;
-    @apply bg-gray-600;
+    @apply rounded-md;
+    @apply py-2;
 }
 
 .markdown pre {
-    @apply bg-gray-600;
     @apply text-left;
     @apply relative;
     @apply py-2;
